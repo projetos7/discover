@@ -10,10 +10,11 @@ function toggleMode() {
 
   const img = document.querySelector("#profile img")
   if (html.classList.contains("light")) {
-    img.setAttribute("src", "./assets/avata-light.png")
-    img.setAttribute("alt", "Não carrega agora")
+    img.setAttribute("src", "./assets/avatar-light.png")
+    img.setAttribute("alt", "Foto do Mayk de Perfil com oculos escuros")
   } else {
-    img.setAttribute("scr", "./assets/avata.png")
-    img.setAttribute("alt", "Não carrega")
+    img.setAttribute("src", "./assets/Avatar.png")
+    img.setAttribute("alt", "Foto do Mayk de Perfil")
   }
+
 }

@@ -12,9 +12,6 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-star.svg);
-
-  --teste-cor: white;
-  --teste-imagem: url(./assets/teste02.svg);
 }
 
 .light {
@@ -25,13 +22,11 @@
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
   --switch-bg-url: url(./assets/sun.svg);
-
-  --teste-cor: black;
-  --teste-imagem: url(./assets/teste01.svg);
 }
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: <weight>;
@@ -63,27 +58,7 @@ body {
   margin-top: 8px;
 }
 
-
-#teste {
-  border: 1px solid red;
-  width: 310px;
-  display: flex;
-  align-content: center;
-}
-
-#teste button {
-  display: none;
-  margin-top: 15px;
-  margin-left: 85px;
-  width: 130px;
-  height: 130px;
-  background: var(--teste-cor) var(--teste-imagem) no-repeat center;
-  border-radius: 50%;
-}
-  
-
 #switch {
-  border: 1px red solid;
   position: relative;
   width: 64px;
   margin: 4px auto;
@@ -188,4 +163,16 @@ footer {
   color: var(--text-color);
   list-style: none;
   text-decoration: none;
+}
+
+/* media queries */
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
