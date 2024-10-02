@@ -29,7 +29,7 @@ body {
   height: 100vh;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weight;
   font-style: normal;
   color: var(--text-color);
 }
